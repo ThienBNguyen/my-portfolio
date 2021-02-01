@@ -1,0 +1,100 @@
+@import "src/App.scss";
+// .OnScrollHeader{
+// transition: all 0.3s ease-out;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%
+
+//     .logo{
+//         transform: translateY(-100px);
+//     }
+// }
+
+// .nav-after{
+//  color: $nav-color;
+//     list-style: none;
+//     display: flex;
+//     text-transform: capitalize;
+//     margin-right: 1rem;
+//     margin:0rem;
+// }
+
+// .Header-after{
+//     transition: transform ease-out 2s;
+//     transform: translate(0%, -30%);
+//     background-color: #FFFFFF;
+//     position: fixed;
+//     height: 8rem; 
+//     box-shadow: 15px 14px 57px 0px rgba(47, 73, 100, 0.04);
+// }
+// .icon-logo-text{
+//     transition: color ease 2s;
+//     color:  $logo-background-color !important;
+// }
+// .logo-after{
+//     transition: transform ease-in 2s;
+//      transform: translate(0%, -100%);
+// }
+
+.Header {
+    z-index: 100;
+    margin: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    margin: 0 auto;
+    li {
+        padding: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 200;
+        letter-spacing: 1.2px;
+        padding-top:2.5rem;
+       a{
+            color:$nav-color;
+            text-decoration: none;
+            &:after{
+                content: '';
+                width: 0px;
+                height: 2px;
+                display: block;
+                background: $nav-color;
+                transition: 400ms;
+            }
+                &:hover:after{
+                    width: 100%;
+                    cursor: pointer;
+                        }
+        }
+
+    }
+
+    .logo-bg {
+        margin-left: 1rem;
+        border-radius: 50%;
+        background-color: $logo-background-color;
+        padding:3rem;
+        margin:2rem;
+        letter-spacing: 2px;
+        font-weight: 100;
+        font-size:2.5rem;
+
+   }  
+   .logo-text{
+        color: $logo-color;
+        position: absolute;
+        font-size: 2.5rem;
+        top: 3.6rem;
+        left: 3.2rem;
+            }
+}
+
+.nav {
+    color: $nav-color;
+    list-style: none;
+    display: flex;
+    text-transform: capitalize;
+    margin-right: 1rem;
+    margin:2rem;
+}

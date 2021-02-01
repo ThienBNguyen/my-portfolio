@@ -1,0 +1,50 @@
+.Skills{
+    margin-top: -10rem; 
+    // move after scroll
+h2{
+    text-align: center;
+}
+}
+.flex{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+.bar{
+    margin: 0 auto;
+    background-color:rgb(238,238,238);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    width: 30%;
+    height: 1.7rem;
+    position: relative;
+
+.fill{
+    position:absolute;
+    top:0;
+    left: 0;
+}
+    .tag{
+        background-color:red;
+        padding-left: 2rem;
+        align-self: center;
+        width: 9rem;
+        height: 100%;
+        padding-top: 3px;
+        color:white;
+
+    }
+    .html, .scss{
+        background-color: rgb(5,161,167);
+        width: 90%;
+    }
+    .react, .javascript{
+        background-color: rgb(5,161,167);
+        width: 80%;
+    }
+    .node{
+        background-color: rgb(5,161,167);
+        width: 50%;
+    }
+   
+}

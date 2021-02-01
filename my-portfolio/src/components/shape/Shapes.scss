@@ -1,0 +1,52 @@
+.Shapes{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.shape{
+    height: 20%;
+    width: 20%;
+}
+.part1{
+    position:absolute;
+    top: 40rem;
+    right:10rem;
+}
+.xmov2{
+    // position:absolute;
+     top: 40rem;
+    right:10rem;
+    animation-delay: -9s;
+    animation: floatX infinite 8s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-name: test;
+    animation-duration: 30s;
+}
+@keyframes test {
+  0%   {right:0rem; top:0rem;}
+  25%  { right:5rem; top:0rem;}
+  50%  { right:5rem; top:0rem;}
+  75%  { right:0rem; top:5rem;}
+  100% {right:0rem; top:0rem;}
+}
+.part2{
+    position:absolute;
+    top: 80rem;
+    right:5rem;
+}
+.part5{
+   position:absolute;
+    top: 60rem;
+    left:5rem; 
+}
+.part3{
+    position:absolute;
+    top: 10rem;
+    right:5rem;
+}
+.part4{
+    position:absolute;
+    top: 20rem;
+    left:5rem;
+}
